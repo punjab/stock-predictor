@@ -520,3 +520,38 @@ Note. As a machine learning engineering, consider to follow a 20/80 rule when it
 ```
 
 ```
+
+# Algorithm Understanding
+
+### How does the Prophet Algorithm differ from an LSTM?
+
+Prophet is a time series forecasting algorithm that is based on an additive model where non-linear trends are fit with yearly, weekly, and daily seasonality, plus holiday effects. It works best with time series that have strong seasonal effects and several seasons of historical data. Prophet is robust to missing data and shifts in the trend, and typically handles outliers well.
+LSTM on the other hand is a type of recurrent neural network that is used in deep learning. It is a type of neural network that is trained using backpropagation through time and overcomes the vanishing gradient problem.
+
+### Why does an LSTM have poor performance against ARIMA and Profit for Time Series?
+
+Likely because Prophet is an additive model whereas LSTM is a neural network using back propagation. Although according to some research (https://www.researchgate.net/publication/330477082_A_Comparison_of_ARIMA_and_LSTM_in_Forecasting_Time_Series), LSTM can outperform ARIMA in some time series cases.
+
+# Interview Readiness
+
+### What is exponential smoothing and why is it used in Time Series Forecasting?
+
+Exponential Smoothing Methods is a family of forecasting models. They use weighted averages of past observations to forecast new values. The idea is to give more importance to recent values in the series. Thus, as observations get older in time, the importance of these values get exponentially smaller.
+
+Exponential Smoothing Methods combine Error, Trend, and Seasonal components in a smoothing calculation. Each term can be combined either additively, multiplicatively, or be left out of the model. These three terms (Error, Trend, and Season) are referred to as ETS.
+
+### What is stationarity? What is seasonality? Why Is Stationarity Important in Time Series Forecasting?
+
+Stationarity is a property of a time series in which the statistical properties such as mean, variance, autocorrelation, etc. are all constant over time. A stationary time series is easier to model and forecast.
+
+Seasonality is a pattern that repeats itself over a fixed period of time. For example, the number of sales of a product is likely to be higher during the holiday season. Seasonality is important in time series forecasting because it helps us to understand the pattern of the data and to forecast future values.
+
+Stationarity is an important concept in the field of time series analysis as it has tremendous influence on how the data is perceived and predicted.
+
+### How is seasonality different from cyclicality?
+
+Seasonality is a pattern that repeats itself over a fixed period of time. Cyclicity is a pattern that repeats itself over an irregular period of time. Cyclical behavior can drift over time because the time between periods isn't precise. For example, the stock market tends to cycle between periods of high and low values, but there is no set amount of time between those fluctuations.
+
+### Fill in the blanks:
+
+Seasonality is predictable, whereas Cyclicity is not.
